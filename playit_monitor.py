@@ -67,20 +67,20 @@ def main():
 
         if success:
             if was_offline:
-                message = "Status: ONLINE - Connection Restored"
+                message = "Connection Restored"
                 log_console(message)
                 log_to_file(message)
                 was_offline = False
 
             if ping_time:
-                log_console(f"Online - Ping {ping_time:.2f} ms")
+                log_console(f"Online - Ping {ping_time:.2f}ms")
             else:
-                log_console("Online - Ping successful (no time)")
+                log_console("Online - Ping (no time)")
 
             fails = 0
 
         else:
-            message = "Status: OFFLINE - Connection Lost"
+            message = "OFFLINE - Connection Lost"
             log_console(message)
             log_to_file(message)
             was_offline = True
