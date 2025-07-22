@@ -9,7 +9,7 @@ PING_TARGET = "8.8.8.8"  # Replace with your server IP if desired.
 CHECK_INTERVAL = 30  # Seconds between checks
 FAIL_THRESHOLD = 3
 SERVICE_NAME = "playit"
-LOG_FOLDER = "/DATA/Documents/heartbeat/logs/"
+LOG_FOLDER = "folerder/smallfolder" # insert folder location
 LOG_RETENTION_DAYS = 7  # Keep logs for 7 days
 
 # Ensure log folder exists
